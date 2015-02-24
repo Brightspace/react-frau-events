@@ -1,0 +1,41 @@
+{
+  "name": "react-frau-events",
+  "version": "0.0.1",
+  "description": "A React mixin to mix custom event listener/emitter functions on React components.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run build && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brightspace/react-frau-events.git"
+  },
+  "keywords": [
+    "d2l",
+    "react",
+    "frau",
+    "events"
+  ],
+  "author": "D2L Corporation",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Brightspace/react-frau-events/issues"
+  },
+  "homepage": "https://github.com/Brightspace/react-frau-events",
+  "dependencies": {
+    "events": "^1.0.2",
+    "q": "^1.2.0",
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.2.2",
+    "react-tools": "^0.12.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "testDirectoryName": "test",
+    "unmockedModulePathPatterns": [
+      "react"
+    ]
+  }
+}
