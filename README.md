@@ -51,6 +51,8 @@ By default, the mixin will use a global/shared event emitter, meaning that all c
 For example, the following would provide an [EventEmitter](http://nodejs.org/api/events.html) for instances of Component, and when the custom event is emitted, only delegates on instances of Component would be called.
 
 ```javascript
+     var EventEmitter = require('events').EventEmitter;
+
      var Component = React.createClass({
           mixins: [Emitter.ForEvent('customEvent', new EventEmitter())],
           ...
