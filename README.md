@@ -68,6 +68,13 @@ A promise is returned from ***emitEventName*** when all of the handlers have com
           });
 ```
 
+## Contributing
+
+### Code Style
+
+This repository is configured with [EditorConfig](http://editorconfig.org) rules and contributions should make use of them.
+
+
 [npm-url]: https://www.npmjs.org/package/react-frau-events
 [npm-image]: https://img.shields.io/npm/v/react-frau-events.svg
 [ci-url]: https://travis-ci.org/Brightspace/react-frau-events
