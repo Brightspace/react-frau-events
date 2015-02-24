@@ -44,11 +44,11 @@ The event is emitted simply by calling ***emitEventName*** on an instance of the
      componentInstance.emitCustomEvent();
 ```
 
-### Isolated Emitters
+### Isolated Component Emitters
 
 By default, the mixin will use a global/shared event emitter, meaning that all component instances using the mixin will share the same emitter, and emitting an event will call the respective handlers on all the components. It is possible to scope the emitter for components when the mixin specified for the component.
 
-For example, the following would provide an [EventEmitter](http://nodejs.org/api/events.html) for instances of this component, and when the custom event is emitted, only delegates on instances of Component would be called.
+For example, the following would provide an [EventEmitter](http://nodejs.org/api/events.html) for instances of Component, and when the custom event is emitted, only delegates on instances of Component would be called.
 
 ```javascript
      var Component = React.createClass({
