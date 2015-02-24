@@ -64,7 +64,8 @@ For example, the following would provide an [EventEmitter](http://nodejs.org/api
 A promise is returned from ***emitEventName*** when all of the handlers have completed running. When the promise resolves, the results of the handlers are passed along. This enabled handlers themselves to be asynchronous.
 
 ```javascript
-     componentInstance.emitCustomEvent(this)
+     componentInstance
+          .emitCustomEvent()
           .then(function(results) {
                ...
           });
