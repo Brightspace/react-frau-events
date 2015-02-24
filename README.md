@@ -48,7 +48,7 @@ The event is emitted simply by calling ***emitEventName*** on an instance of the
 
 By default, the mixin will use a global/shared event emitter, meaning that all component instances using the mixin will share the same emitter, and emitting an event will call the respective handlers on all the components. It is possible to scope the emitter for components when the mixin specified for the component.
 
-For example, the following would provide an emitter for instances of this component, and when the custom event is emitted, only delegates on instances of Component would be called.
+For example, the following would provide an [EventEmitter](http://nodejs.org/api/events.html) for instances of this component, and when the custom event is emitted, only delegates on instances of Component would be called.
 
 ```javascript
      var Component = React.createClass({
@@ -62,7 +62,7 @@ For example, the following would provide an emitter for instances of this compon
 A promise is returned from ***emitEventName*** when all of the handlers have completed running. When the promise resolves, the results of the handlers are passed along. This enabled handlers themselves to be asynchronous.
 
 ```javascript
-     componentInstance.emitValidate(this)
+     componentInstance.emitCustomEvent(this)
           .then(function(results) {
                ...
           });
