@@ -178,6 +178,28 @@ describe('for-event', function() {
 
 		});
 
+		pit('invokes all handlers for a given type of component defined with an isolated emitter', function() {
+
+			var Component = React.createClass({
+				mixins: [ForEvent('customEvent', new EventEmitter())],
+				onCustomEvent: function() {
+					return 'apples';
+				},
+				render: function() {
+					return React.createElement('div');
+				}
+			});
+
+			var instance1 = TestUtils.renderIntoDocument(<Component />);
+
+			TestUtils.renderIntoDocument(<Component />)
+
+			return instance1.emitCustomEvent().then(function(result) {
+				expect(result.length).toBe(2);
+			});
+
+		});
+
 	});
 
 	describe('with global/shared emitter', function() {
