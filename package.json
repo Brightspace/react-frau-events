@@ -1,6 +1,6 @@
 {
   "name": "react-frau-events",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A React mixin to mix custom event listener/emitter functions on React components.",
   "main": "lib/index.js",
   "scripts": {
@@ -25,11 +25,11 @@
   "dependencies": {
     "events": "^1.0.2",
     "q": "^1.2.0",
-    "react": "^0.12.2"
+    "react": "^0.13.3"
   },
   "devDependencies": {
-    "jest-cli": "^0.2.2",
-    "react-tools": "^0.12.2"
+    "jest-cli": "^0.4.15",
+    "react-tools": "^0.13.3"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
