@@ -9,8 +9,8 @@ describe('for-event', function() {
 	var EventEmitter = require('events').EventEmitter,
 		ForEvent = require('../lib/for-event'),
 		Q = require('q'),
-		React = require( 'react/addons' ),
-		TestUtils = React.addons.TestUtils;
+		React = require( 'react' ),
+		TestUtils = require('react-addons-test-utils');
 
 	it('mixes to provide event emitter', function() {
 
