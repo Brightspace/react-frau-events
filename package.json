@@ -4,7 +4,7 @@
   "description": "A React mixin to mix custom event listener/emitter functions on React components.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run build && jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
